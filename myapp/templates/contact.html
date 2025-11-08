@@ -1,0 +1,109 @@
+{% extends 'base.html' %} {% load static %} {% block title %}Contact Us{%endblock %} {% block content %}
+
+<!-- Hero Section -->
+<section class=" text-white text-center py-5 rounded" style="background-color: #473472;">
+  <div class="container">
+    <h1 class="display-4 fw-bold ">Contact Us</h1>
+    <p class="lead">
+      We’d love to hear from you! Reach out with any questions or feedback.
+    </p>
+  </div>
+</section>
+
+<!-- Contact Form & Info Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <!-- Contact Form -->
+      <div class="col-lg-7 mb-4">
+        <h2 class="fw-bold mb-4">Send Us a Message</h2>
+        <form method="post" action="">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input
+              type="text"
+              class="form-control"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your message..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-5">
+        <h2 class="fw-bold mb-4">Contact Information</h2>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <strong>Address:</strong> 123 Main Street, Phnom Penh, Cambodia
+          </li>
+          <li class="mb-3"><strong>Phone:</strong> +855 12 345 678</li>
+          <li class="mb-3"><strong>Email:</strong> info@example.com</li>
+          <li class="mb-3">
+            <strong>Working Hours:</strong> Mon - Fri, 9:00 AM - 6:00 PM
+          </li>
+        </ul>
+        <p class="text-muted">
+          We aim to respond to all messages within 24 hours.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Optional Google Map Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Find Us Here</h2>
+    <div class="ratio ratio-16x9">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.123456789!2d104.912345!3d11.562345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095123456789ab%3A0xabcdef123456789!2sPhnom%20Penh!5e0!3m2!1sen!2skh!4v1699999999999!5m2!1sen!2skh"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

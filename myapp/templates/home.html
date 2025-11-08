@@ -1,0 +1,64 @@
+{% extends 'base.html' %} {% load static %} {% block title %}Home{% endblock %}
+{% block content %}
+<!-- Hero / Home Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Column: Description -->
+      <div class="col-12 col-md-4 col-lg-3 mb-4 mb-lg-0">
+        <h1 class="fw-bold display-5">Welcome to Our Website</h1>
+        <p class="lead">
+          We provide the best services to help you achieve your goals. Explore
+          our offerings and learn how we can help your business grow.
+        </p>
+        <a href="/about/" class="btn btn-primary btn-lg mt-3">Learn More</a>
+      </div>
+
+      <!-- Right Column: Image -->
+      <div class="col-12 col-md-8 col-lg-9 text-center">
+        <img
+          src="{% static 'images/home-image.jpg' %}"
+          alt="Home Image"
+          class="img-fluid rounded-circle shadow"
+          style="max-width: 100%; height: auto; object-fit: cover"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Optional Features Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Our Features</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">High Quality</h5>
+            <p class="card-text">
+              We deliver services that exceed expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Reliable Support</h5>
+            <p class="card-text">Our team is always available to help you.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 border-0 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Affordable</h5>
+            <p class="card-text">Top quality services at reasonable prices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
