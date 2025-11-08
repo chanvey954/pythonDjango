@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-vijvpo3g_k8w$8)10t)1gs!82ghr2ey$p^dg!1h2apkjuwjz34'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://github.com/chanvey954/pythonDjango.github.io/demo']
 
 
 # Application definition
@@ -106,9 +106,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-us,kh'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Phnom_Penh,UTC+7'
 
 USE_I18N = True
 
