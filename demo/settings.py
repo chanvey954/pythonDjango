@@ -24,8 +24,7 @@ SECRET_KEY = 'django-insecure-vijvpo3g_k8w$8)10t)1gs!82ghr2ey$p^dg!1h2apkjuwjz34
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
-ALLOWED_HOSTS = ['https://github.com/chanvey954/pythonDjango.github.io/demo']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'pythondjango-bi0t.onrender.com']
 
 
 # Application definition
